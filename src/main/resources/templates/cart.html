@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="common/header :: common-header">
+
+
+<body>
+<div th:replace="common/header :: navbar"/>
+
+<main role="main" class="container box" style="margin-top: 100px;">
+
+    <div class="alert alert-danger"  th:if="${cartItems.size() == 0}"> NO ITEMS IN CART.</div>
+    <div th:if="${cartItems.size() > 0}">
+    <div class="row">
+        <div class="col-md-2">Items</div>
+        <div class="col-md-2">Author</div>
+        <div class="col-md-2">Price</div>
+        <div class="col-md-3">Quantity</div>
+        <div class="col-md-2">Total Price ($)</div>
+        <div class="col-md-1"></div>
+    </div>
+    <hr/>
+    <div class="row" th:each="cartItem: ${cartItems}" style="margin-bottom: 30px;" th:data-id="${cartItem.bookId}">
+        <div class="col-md-2">
+            <img th:src="@{${cartItem.imageUrl}}" height="200px" width="150px">
+        </div>
+        <div class="col-md-2" th:text="${cartItem.author}"></div>
+        <div class="col-md-2"><span class="book-price" th:text="${cartItem.price}"></span></div>
+        <div class="col-md-3" >
+            <div class="row">
+                <div class="col-md-4 cart-quantity-plus"><i class="fa fa-plus" style="cursor: pointer" aria-hidden="true"></i></div>
+                <div class="col-md-4 cart-quantity"><span th:text="${cartItem.quantity}"></span></div>
+                <div class="col-md-4 cart-quantity-minus"><i class="fa fa-minus" style="cursor: pointer" aria-hidden="true"></i></div>
+            </div>
+        </div>
+        <div class="col-md-2"><span class="book-total-price" th:text="${cartItem.price * cartItem.quantity}"></span></div>
+        <div class="col-md-1 cart-delete"><i class="fa fa-trash-o" style="cursor: pointer" aria-hidden="true"></i></div>
+    </div>
+        <hr/>
+        <div class="row">
+            <div class="col-md-9"></div>
+            <div class="col">Sub-Total: <b><span class="cart-total-price" th:text="${ '$ ' + subTotal}"></span></b></div>
+        </div>
+    </div>
+
+</main><!-- /.container -->
+<div th:replace="common/header :: body-bottom-script"/>
+</body>
+</html>

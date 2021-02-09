@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="/common/header :: common-header">
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+</head>
+<body>
+<div th:replace="/common/header :: navbar" />
+
+<div class="container">
+    <h1>User Profile:</h1>
+    <h1>This section will include user's profile, shopping history</h1>
+    <span th:text="${useDto.firstName}"> </span>
+</div>
+
+<div th:replace="/common/header :: body-bottom-script"/>
+</body>
+</html>

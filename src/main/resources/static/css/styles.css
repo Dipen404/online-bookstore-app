@@ -1,0 +1,82 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: #333333;
+    background-color: #333333;
+}
+
+.navbar{
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+}
+
+.box {
+    /*border: 1px solid black;*/
+    margin-top: 50px;
+}
+.card{
+    margin-left: 20px;
+}
+.home-headline{
+    font-family:  "Times New Rom", serif;
+    font-size: 24px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    margin-top: 13px;
+
+}
+
+.home-headline span {
+    background-color: #231f20;
+    padding: 5px 20px;
+}
+
+
+body {
+    background-color:#462a51;
+    padding-top:40px;
+}
+
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card .book-author {
+    font-size: 12px;
+    font-style: italic;
+    padding: 3px 0 0;
+    color: #196388;
+}
+
+.card .book-price {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.book-thumbnail {
+
+}
+
+.card-title {
+    font-size: 14px!important;
+    color: #000;
+    font-weight: 700!important;
+    line-height: normal;
+    margin: 10px 0 0;
+    text-transform: capitalize;
+}

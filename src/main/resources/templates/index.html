@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="common/header :: common-header">
+
+
+<body>
+<div th:replace="common/header :: navbar"/>
+
+<main role="main" class="container box">
+
+    <div class="row">
+        <div class="col-xs-8" style="margin-top: 65px;">
+            <!-- Carosel Begins -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://picsum.photos/1600/500" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/1600/500" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/1600/500" class="d-block w-100" alt="..."/>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- Carosel Ends -->
+        </div>
+
+        <div class="col-xs-4">
+            <img src="/image/logo.png" alt="" class="img-responsive"/>
+        </div>
+    </div>
+
+    <hr/>
+
+    <div class="row">
+        <div class="col-xs-4">
+            <div class="card">
+                <img src="/images/bestseller.png" class="img-responsive" height="250px" width="300px">
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="card">
+                <img src="/images/hours.png" class="img-responsive" height="250px" width="300px">
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="card">
+                <img src="/images/faq.png" class="img-responsive" height="250px" width="300px">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- featured books start -->
+    <div>
+        <div class="home-headline">
+            <span>Featured Books</span>
+            <hr/>
+            <div class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#featured-books" data-slide-to="0" class="active"></li>
+                    <li data-target="#featured-books" data-slide-to="1"></li>
+                    <li data-target="#featured-books" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                            <div class="col-2"><img src="/images/book1.png" class="img-responsive"></div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#featured-books" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#featured-books" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- featured books end -->
+
+    <hr/>
+    <h2>Availiable Books</h2>
+    <!-- Books Item Starts -->
+    <div class="row">
+        <div class="col-4">
+            <ul class="list-group">
+                <li class="list-group-item" th:classappend="${#httpServletRequest.getRequestURI() == '/' ? 'active':''}"
+                    style="cursor: pointer; background-color: #343a40;" onclick="handleSelectCategory(event)" name="0">
+                    All Books
+                </li>
+                <li class="list-group-item" style="cursor: pointer; background-color: #343a40;"
+                    th:each="category : ${categoryList}"
+                    th:classappend="${category.id == selectedCategory } ? 'active' : ''" th:name="${category.id}"
+                    th:text="${category.name}" onclick="handleSelectCategory(event)"></li>
+            </ul>
+        </div>
+        <div class="col">
+            <div class="row">
+
+                <div class="col alert alert-danger" th:if="${bookList.size() == 0}">NO BOOKS IN THIS CATEGORY</div>
+
+
+                    <div class="col-4" th:if="${bookList.size() > 0}" th:each="book : ${bookList}">
+                        <div class="card book-card" th:data-id="${book.bookId}">
+                            <a href="#">
+                                <img th:src="@{${'/bookImages/' + book.imageUrl}}" th:title="${book.title}"
+                                     th:alt="${book.title}" style=" border-style: solid; border-width: 1px; border-color: #f5fafd; height: 243px; width: 65%;" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title book-title text-truncate">
+                                    <a href="#" th:title="${book.title}" th:text="${book.title}"></a>
+                                </h4>
+                                <span th:title="${book.author}" class="card-text book-author"
+                                      th:text="${book.author}"></span>
+                                <p class="card-text book-price" th:text="${book.price}"></p>
+
+                                <div class="row">
+                                    <button class="btn btn-secondary store-item">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav style="position: center" th:if="${bookList.size() > 0 and totalPages > 1}">
+                        <ul class="pagination">
+                            <li class="page-item" th:each="index : ${#numbers.sequence( 1, totalPages, 1)}">
+                                <a th:if="${selectedCategory == '0'}" class="page-link" th:href="@{ '/?pageno=' + ${index - 1} }" th:text="${index}"></a>
+                                <a th:unless="${selectedCategory == '0'}" class="page-link" th:href="@{ '/books/' + ${selectedCategory} +'?pageno=' + ${index - 1} }" th:text="${index}"></a>
+                            </li>
+                        </ul>
+                    </nav>
+
+            </div>
+        </div>
+    </div>
+    <!-- Books Item Ends -->
+
+</main><!-- /.container -->
+<div th:replace="common/header :: body-bottom-script"/>
+</body>
+</html>
